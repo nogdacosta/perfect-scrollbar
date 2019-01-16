@@ -8,7 +8,7 @@ export default function(i) {
   const roundedScrollTop = Math.floor(element.scrollTop);
 
   i.containerWidth = element.clientWidth;
-  i.containerHeight = element.clientHeight;
+  i.containerHeight = element.offsetHeight;
   i.contentWidth = element.scrollWidth;
   i.contentHeight = element.scrollHeight;
 

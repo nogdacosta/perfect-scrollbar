@@ -114,7 +114,7 @@ export default function(i) {
 
       // if scrollable
       if (overflow.match(/(scroll|auto)/)) {
-        const maxScrollTop = cursor.scrollHeight - cursor.clientHeight;
+        const maxScrollTop = cursor.scrollHeight - cursor.offsetHeight;
         if (maxScrollTop > 0) {
           if (
             !(cursor.scrollTop === 0 && deltaY > 0) &&
